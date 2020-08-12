@@ -29,8 +29,10 @@ function switchTurn() {
   } else 
   if (document.turn == 'X') {
       document.turn = 'O';
+      setMessage(document.turn + 's turn');
   } else {
       document.turn = 'X';
+      setMessage(document.turn + 's turn');
   }
 }
 
@@ -71,7 +73,7 @@ function clearBox(number) {
   return document.getElementById('s' + number).innerText = '';
 }
 
-
+ 
 function setMessage(msg) {
   document.getElementById('message').innerText = msg;
 }
