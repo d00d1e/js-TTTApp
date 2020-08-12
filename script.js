@@ -15,7 +15,7 @@ function nextMove(square) {
   if (square.innerText === ''){
       square.innerText = document.turn;
       switchTurn();
-      setMessage(document.turn + 's turn');
+      // setMessage(document.turn + 's turn');
   } else {
       setMessage('Pick another square');
   }
@@ -24,8 +24,8 @@ function nextMove(square) {
 
 function switchTurn() {
   if (checkForWinner(document.turn)) {
-      document.winner = document.turn;
       setMessage('Congrats ' + document.turn + ' you won!');
+      document.winner = document.turn;
   } else 
   if (document.turn == 'X') {
       document.turn = 'O';
