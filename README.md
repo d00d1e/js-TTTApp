@@ -1,2 +1,7 @@
-# js-TTTApp
-A simple vanilla javascript Tic-Tac-Toe game 
+# Tic-Tac-Toe
+
+HTML | CSS | JS
+
+A simple, old school Tic-Tac-Toe game 
+
+<img src="tttapp.png">
